@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>entrer le nom complet ici</displayName>
+  <description>entrer la description ici</description>
+  <resources>
+    <stringTable>
+      <string id="DisplayLastLogonInfoDescription">Afficher les informations sur les ouvertures de session précédentes au cours d’une ouverture de session utilisateur</string>
+      <string id="DisplayLastLogonInfoDescription_Help">Ce paramètre de stratégie contrôle si le système doit ou non afficher les informations sur les ouvertures de session précédentes et sur les échecs d’ouverture de session à l’utilisateur.
+
+Si vous activez ce paramètre de stratégie pour les comptes d’utilisateurs locaux et les comptes d’utilisateurs de domaine dans les domaines de niveau fonctionnel Microsoft Windows Server 2008 au minimum, un message apparaît dès que l’utilisateur a ouvert une session en indiquant la date et l’heure de la dernière ouverture de session réussie de l’utilisateur, la date et l’heure du dernier échec d’ouverture de session sous ce nom d’utilisateur et le nombre d’échecs d’ouverture de session depuis sa dernière ouverture de session réussie. La réception de ce message doit être confirmée par l’utilisateur avant l’affichage du Bureau Microsoft Windows.
+
+En revanche, si vous activez ce paramètre de stratégie pour les comptes d’utilisateurs de domaine dans les domaines de niveau fonctionnel Windows Server 2003, Windows 2000 en mode natif ou Windows 2000 en mode mixte, un message d’avertissement s’affiche pour prévenir de la non-récupération des informations par Windows et, par conséquent, de l’impossibilité d’ouvrir une session pour l’utilisateur. Ainsi, il est déconseillé d’activer ce paramètre de stratégie si le domaine ne se trouve pas au niveau fonctionnel de domaine Windows Server 2008.
+
+Si vous désactivez ce paramètre de stratégie ou ne le configurez pas, les messages sur les ouvertures de session précédentes ou sur les échecs d’ouverture de session ne s’affichent pas.</string>
+      <string id="Logon">Options d’ouverture de session Windows</string>
+      <string id="LogonHoursAction_Disconnect">Déconnecter</string>
+      <string id="LogonHoursAction_Lock">Verrouiller</string>
+      <string id="LogonHoursAction_Logoff">Fermer la session</string>
+      <string id="LogonHoursNotificationPolicyDescription">Supprimer les avertissements d’expiration des horaires d’accès</string>
+      <string id="LogonHoursNotificationPolicyDescription_Help">Cette stratégie indique si l’utilisateur connecté doit être averti avant l’expiration de ses horaires d’accès. Par défaut, l’utilisateur est averti avant l’expiration de ses horaires d’accès, si des actions ont été définies pour se produire au moment de l’expiration de ses horaires d’accès.
+
+Si vous activez ce paramètre, l’utilisateur ne recevra pas d’avertissement avant l’expiration de ses horaires d’accès.
+
+Si vous désactivez ce paramètre ou si vous ne le configurez pas, l’utilisateur recevra des avertissements avant l’expiration de ses horaires d’accès, si des actions ont été définies pour se produire au moment de l’expiration de ses horaires d’accès.
+
+Remarque : si vous configurez ce paramètre, vous pouvez configurer de manière appropriée le paramètre « Définir l’action à entreprendre à l’expiration des horaires d’accès ». Si le paramètre « Définir l’action à entreprendre à l’expiration des horaires d’accès » est désactivé ou non configuré, le paramètre « Supprimer les avertissements d’expiration des horaires d’accès » n’aura aucun effet et les utilisateurs ne recevront pas d’avertissement avant l’expiration de leurs horaires d’accès.</string>
+      <string id="LogonHoursPolicyDescription">Définir l’action à entreprendre à l’expiration des horaires d’accès</string>
+      <string id="LogonHoursPolicyDescription_Help">Cette stratégie indique l’action à entreprendre à l’expiration des horaires d’accès de l’utilisateur connecté. Les actions peuvent être les suivantes : verrouillage de la station de travail, déconnexion de l’utilisateur ou fermeture complète de la session de l’utilisateur.
+
+Si vous choisissez le verrouillage ou la déconnexion d’une session, l’utilisateur ne pourra ni déverrouiller la session ni se reconnecter en dehors de ses horaires d’accès autorisés.
+
+Si vous choisissez de fermer la session d’un utilisateur, celui-ci ne pourra pas ouvrir de nouvelle session en dehors de ses horaires d’accès autorisés. Si vous choisissez de fermer la session d’un utilisateur, celui-ci peut perdre des données non enregistrées.
+
+Si vous activez ce paramètre, le système effectuera l’action que vous spécifiez à l’expiration des horaires d’accès de l’utilisateur.
+
+Si vous désactivez ce paramètre ou si vous ne le configurez pas, le système n’entreprendra aucune action à l’expiration des horaires d’accès de l’utilisateur. L’utilisateur pourra continuer la session existante, mais il ne pourra pas ouvrir une nouvelle session.
+
+Remarque : si vous configurez ce paramètre, vous pouvez configurer de manière appropriée le paramètre « Supprimer les avertissements d’expiration des horaires d’accès ».</string>
+      <string id="ReportCachedLogonPolicyDescription">Indiquer les indisponibilités du serveur d’accès à l’ouverture de session utilisateur</string>
+      <string id="ReportCachedLogonPolicyDescription_Help">Cette stratégie indique si l’utilisateur qui a ouvert une session doit être averti lorsque le serveur d’accès n’a pas pu être contacté au cours de l’ouverture de session et que la session a été ouverte en utilisant les informations de compte enregistrées précédemment.
+
+Si ce paramètre est activé, l’utilisateur recevra un message de notification lorsqu’il ouvrira une session avec ses informations d’identification mises en cache.
+
+Si ce paramètre est désactivé ou non configuré, l’utilisateur ne recevra aucun message.</string>
+
+      <string id="SoftwareSASGenerationDescription">Désactiver ou activer la séquence de touches de sécurité (SAS, Secure Attention Sequence)</string>
+      <string id="SoftwareSASGenerationDescription_Help">Ce paramètre de stratégie permet ou ne permet pas aux logiciels de simuler la séquence de touches de sécurité (SAS).
+
+Si vous activez ce paramètre de stratégie, vous avez le choix entre quatre options : 
+
+Si vous définissez ce paramètre de stratégie sur « Aucune », les logiciels du mode utilisateur ne peuvent pas simuler la séquence de touches de sécurité.
+Si vous définissez ce paramètre de stratégie sur « Services », les services peuvent simuler la séquence de touches de sécurité.
+Si vous définissez ce paramètre de stratégie sur « Applications d’ergonomie », les applications liées à l’ergonomie peuvent simuler la séquence de touches de sécurité.
+Si vous définissez ce paramètre de stratégie sur « Services et applications d’ergonomie », les services et les applications liées à l’ergonomie peuvent simuler la séquence de touches de sécurité.
+
+Si vous désactivez ce paramètre ou si vous ne le configurez pas, seules les applications liées à l’ergonomie qui s’exécutent sur le Bureau sécurisé peuvent simuler la séquence de touches de sécurité.</string>
+
+      <string id="SoftwareSASGeneration_None">Aucune</string>
+      <string id="SoftwareSASGeneration_SYSTEM">Services</string>
+      <string id="SoftwareSASGeneration_UIAccess">Applications d’ergonomie</string>
+      <string id="SoftwareSASGeneration_Both">Services et applications d’ergonomie</string>
+
+      <string id="CustomShellPolicyDescription">Interface utilisateur personnalisée</string>
+      <string id="CustomShellPolicyDescription_Help">Spécifie une interface utilisateur de remplacement.
+
+Le programme de l’Explorateur (%windir%\explorer.exe) crée l’interface habituelle de Windows, mais vous pouvez utiliser ce paramètre pour indiquer une interface de substitution. Si vous activez ce paramètre, le système démarre l’interface que vous avez spécifiée à la place d’Explorer.exe.
+
+Pour utiliser ce paramètre, copiez votre programme d’interface sur un partage réseau ou sur le lecteur système. Activez ensuite le paramètre et tapez le nom du programme d’interface, sans omettre l’extension de nom de fichier, dans la zone de texte Nom de l’environnement. Si le fichier du programme d’interface ne se trouve pas dans un dossier spécifié dans la variable d’environnement PATH pour votre système, précisez le chemin d’accès complet du fichier.
+
+Si vous désactivez ce paramètre ou si vous ne le configurez pas, il est ignoré et le système affiche l’interface de l’Explorateur.
+
+Conseil : pour trouver les dossiers indiqués par la variable d’environnement PATH, dans le Panneau de configuration, cliquez sur Système, puis dans la boîte de dialogue Propriétés système qui s’affiche, cliquez sur l’onglet Avancé, sur le bouton Variables d’environnement et, dans la zone Variables système, sur Path.</string>
+
+      <string id="AutomaticRestartSignOnDescription">Se connecter et verrouiller automatiquement le dernier utilisateur interactif après un redémarrage</string>
+      <string id="AutomaticRestartSignOnDescription_Help">This policy setting controls whether a device will automatically sign in and lock the last interactive user after the system restarts or after a shutdown and cold boot.
+
+This only occurs if the last interactive user didn’t sign out before the restart or shutdown.​
+
+If the device is joined to Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.​ This policy is not supported on Active Directory joined machines.
+
+If you don’t configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​ This policy is disabled by default on Windows Server machines.
+
+For enterprise managed devices, after enabling this policy you need to configure its settings through the ConfigAutomaticRestartSignOn policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
+
+If you disable this policy setting, the device does not configure automatic sign in. The user’s lock screen apps are not restarted after the system restarts.</string>
+
+      <string id="ConfigAutomaticRestartSignOnDescription">Configurer le mode de connexion automatique et de verrouillage du dernier utilisateur interactif après un redémarrage ou un démarrage à froid</string>
+      <string id="ConfigAutomaticRestartSignOnDescription_Help">This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose “Disabled” in the “Sign-in and lock last interactive user automatically after a restart” policy, then automatic sign on will not occur and this policy does not need to be configured.
+
+If you enable this policy setting, you can choose one of the following two options:
+
+1. “Enabled if BitLocker is on and not suspended” specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
+     BitLocker is suspended during updates if:
+        - The device doesn’t have TPM 2.0 and PCR7, or
+        - The device doesn’t use a TPM-only protector
+2. “Always Enabled” specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+
+If you disable or don’t configure this setting, the device does not configure automatic sign in.</string>
+
+      <string id="ConfigAutomaticRestartSignOn_EnableIfSecure">Activé si BitLocker est activé et non suspendu</string>
+      <string id="ConfigAutomaticRestartSignOn_EnableAlways">Toujours activé</string>
+
+      <string id="EnableMPRNotifications">Configurez la transmission du mot de passe de l’utilisateur dans le contenu des notifications MPR envoyées par winlogon.</string>
+      <string id="EnableMPRNotifications_Help">Cette stratégie contrôle si le mot de passe de l’utilisateur est inclus dans le contenu des notifications MPR envoyées par winlogon dans le système.
+
+Si vous désactivez ce paramètre ou si vous ne le configurez pas, winlogon envoie des notifications MPR avec des champs de mot de passe vides des informations d’authentification de l’utilisateur.
+
+Si vous activez ce paramètre, winlogon envoie des notifications MPR contenant le mot de passe de l’utilisateur dans les informations d’authentification.</string>
+
+    </stringTable>
+    <presentationTable>
+      <presentation id="LogonHoursPolicyDescription">
+        <dropdownList refId="LogonHoursPolicyDescription" noSort="true">Définir l’action à entreprendre à l’expiration des horaires d’accès</dropdownList>
+      </presentation>
+      <presentation id="SoftwareSASGenerationDescription">
+        <dropdownList refId="SoftwareSASGenerationDescription" noSort="true">Définir quels logiciels sont autorisés à générer la séquence de touches de sécurité</dropdownList>
+      </presentation>
+      <presentation id="ConfigAutomaticRestartSignOnDescription">
+        <dropdownList refId="ConfigAutomaticRestartSignOnDescription" noSort="true">Configurer le mode de connexion automatique et de verrouillage du dernier utilisateur interactif après un redémarrage ou un démarrage à froid</dropdownList>
+      </presentation>
+      <presentation id="CustomShell">
+        <textBox refId="CustomShellInst">
+          <label>Nom du fichier d’interface (par exemple, Explorer.exe)</label>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
