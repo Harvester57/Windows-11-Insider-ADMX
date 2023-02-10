@@ -165,13 +165,13 @@ Si l’état est Non configurée, l’utilisation des Mises à jour automatiques
       <string id="OnlyUseSystemProxyForUpdateDetection">Utiliser uniquement le proxy système pour détecter les mises à jour (par défaut)</string>
       <string id="AllowUserProxyAsFallbackForUpdateDetection">Autoriser l’utilisation du proxy utilisateur comme secours si la détection utilisant un proxy système échoue</string>
       <string id="UpdateClassPolicySource_Title">Spécifier le service source pour des classes spécifiques de mises à jour Windows</string>
-      <string id="UpdateClassPolicySource_Help">Lorsque cette stratégie est activée, les appareils reçoivent les mises à jour Windows pour les classes répertoriées à partir de la source de mise à jour spécifiée : Windows Update ou le service de mise à jour Windows Server. 
+      <string id="UpdateClassPolicySource_Help">When this policy is enabled, devices will receive Windows updates for the classes listed from the specified update source: either Windows Update or Windows Server Update Service.
 
-       Remarque : pour recevoir des mises à jour à partir du service de mise à jour de Windows Server, vous devez avoir configuré correctement un emplacement intranet du service de mise à jour Microsoft à l’aide de la stratégie « Spécifier l’emplacement intranet du service de mise à jour Microsoft ».
+        Note: To receive any updates from the Windows Server Update Service you must have properly configured an intranet Microsoft update service location via the “Specify intranet Microsoft update service location” policy.
 
-       Si cette stratégie n’est pas configurée ou si elle est désactivée, l’appareil continue de détecter les mises à jour par vos autres configurations de stratégie. 
+        If this policy is not configured or is disabled, the device will continue to detect updates per your other policy configurations.
 
-       Remarque : Si vous utilisez « Ne pas autoriser les stratégies de report pour créer des analyses sur Windows Update » pour vérifier que les appareils n’effectuent une analyse que sur votre serveur spécifié, nous vous recommandons de configurer cette stratégie à la place ou en supplément.</string>
+        Note: If you are using “Do not allow deferral policies to cause scans against Windows Update” currently to ensure devices only scan against your specified server, we recommend configuring this policy instead or in addition to such.</string>
       <string id="UpdateClassPolicySourceSelectionWU">Windows Update</string>
       <string id="UpdateClassPolicySourceSelectionWSUS">Services WSUS (Windows Server Update Services)</string>
       <string id="DetectionFrequency_Help">Spécifie la durée en heures pendant laquelle Windows attendra avant de vérifier la disponibilité de nouvelles mises à jour. La durée exacte correspond à la somme de la valeur spécifique et d'une variante aléatoire comprise entre 0 et 4 heures.
@@ -693,6 +693,16 @@ Cette stratégie remplace les stratégies suivantes :
       <string id="ComplianceDeadlineDay28">28</string>
       <string id="ComplianceDeadlineDay29">29</string>
       <string id="ComplianceDeadlineDay30">30</string>
+
+      <string id="AllowTemporaryEnterpriseFeatureControl_Title">Enable features introduced via servicing that are off by default</string>
+      <string id="AllowTemporaryEnterpriseFeatureControl_Help">Features introduced via servicing (outside of the annual feature update) are off by default for devices that have their Windows updates managed*.
+
+If this policy is configured to “Enabled”, then all features available in the latest monthly quality update installed will be on.
+
+If this policy is set to “Not Configured” or “Disabled” then features that are shipped via a monthly quality update (servicing) will remain off until the feature update that includes these features is installed.
+
+ *Windows update managed devices are those that have their Windows updates managed via policy; whether via the cloud using Windows Update for Business or on-premises with Windows Server Update Services (WSUS).
+      </string>
     </stringTable>
 
     <presentationTable>

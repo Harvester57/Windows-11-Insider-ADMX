@@ -92,14 +92,14 @@ Si vous désactivez ou ne configurez pas ce paramètre, lorsqu'une application e
 
         Default is 'disabled' (key not present).
       </string>
-      <string id="DisablePerUserUnsignedPackagesByDefault">Not allow per-user unsigned packages to install by default (requires explicitly allow per install)</string>
-      <string id="DisablePerUserUnsignedPackagesByDefaultExplanation">Not allow per-user unsigned packages to install by default (requires explicitly allow per install)
+      <string id="DisablePerUserUnsignedPackagesByDefault">Ne pas autoriser l’installation des packages non signés par utilisateur par défaut (nécessite explicitement l’autorisation par installation)</string>
+      <string id="DisablePerUserUnsignedPackagesByDefaultExplanation">Ne pas autoriser l’installation des packages non signés par utilisateur par défaut (nécessite explicitement l’autorisation par installation)
 
-        If you enable this policy, the AllowUnsigned option defaults to 'false'.
+Si vous activez cette stratégie, l’option AllowUnsigned a la valeur par défaut « false ».
 
-        If you disable this policy, the AllowUnsigned option defaults to 'true'.
+Si vous désactivez cette stratégie, l’option AllowUnsigned a la valeur par défaut « true ».
 
-        Default is 'disabled' (key not present).
+La valeur par défaut est 'disabled' (clé absente).
       </string>
     </stringTable>
   </resources>

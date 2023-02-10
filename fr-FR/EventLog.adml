@@ -94,23 +94,23 @@ Si vous désactivez ce paramètre de stratégie ou ne le configurez pas, la tail
       <string id="EventLog_Setup">Installation</string>
       <string id="EventLog_System">Système</string>
       <string id="EventLogCategory">Service Journal des événements</string>
-      <string id="Service_RpcAccess_Remote">Limit remote access to the Event Log Service</string>
-      <string id="Service_RpcAccess_Remote_Help">This policy setting controls which remote users will be allowed to connect to the Event Log service on this machine.
+      <string id="Service_RpcAccess_Remote">Limiter l’accès à distance au service journal des événements</string>
+      <string id="Service_RpcAccess_Remote_Help">Ce paramètre de stratégie contrôle les utilisateurs distants qui seront autorisés à se connecter au service de journal des événements sur cette machine.
 
-If you enable this policy, you can restrict which group remote users must be a member of in order to connect to the Event Log Service on this machine. You can require that remote users be a member of one of the following builtin groups:
+Si vous activez cette stratégie, vous pouvez limiter le groupe auquel les utilisateurs distants doivent appartenir pour se connecter au service de journal des événements sur cette machine. Vous pouvez exiger que les utilisateurs distants soient membres de l’un des groupes intégrés suivants :
 
-• Authenticated Users
-• EventLog Readers
-• Administrators
+• Utilisateurs authentifiés
+• Lecteurs de journaux des événements
+• Administrateurs
 
-If you disable or do not configure this policy, the default value will be Authenticated Users.
+Si vous désactivez ou ne configurez pas cette stratégie, la valeur par défaut sera Utilisateurs authentifiés.
 
-For prior versions of Windows, only Authenticated Users was supported. To maintain backwards compatability, local connections to the service will always be allowed from Authenticated Users.
+Pour les versions antérieures de Windows, seuls les utilisateurs authentifiés étaient pris en charge. Pour maintenir la compatibilité avec les versions antérieures, les connexions locales au service seront toujours autorisées à partir d’utilisateurs authentifiés.
 
-This setting does not control access to individual logs. Once a remote connection is allowed, it will still need access to the specific resources it is attempting to use.</string>
-      <string id="Service_RpcAccess_Remote_AU">Authenticated Users</string>
-      <string id="Service_RpcAccess_Remote_ER">Event Log Readers</string>
-      <string id="Service_RpcAccess_Remote_AD">Administrators</string>
+Ce paramètre ne contrôle pas l’accès aux journaux individuels. Une fois qu’une connexion à distance est autorisée, elle doit toujours avoir accès aux ressources spécifiques qu’elle tente d’utiliser.</string>
+      <string id="Service_RpcAccess_Remote_AU">Utilisateurs authentifiés</string>
+      <string id="Service_RpcAccess_Remote_ER">Lecteurs de journaux d'événements</string>
+      <string id="Service_RpcAccess_Remote_AD">Administrateurs</string>
     </stringTable>
     <presentationTable>
       <presentation id="Channel_Log_FileLogAccess_1">
@@ -186,7 +186,7 @@ This setting does not control access to individual logs. Once a remote connectio
         <decimalTextBox refId="Channel_LogMaxSize" defaultValue="1024">Taille maximale du journal (Ko)</decimalTextBox>
       </presentation>
       <presentation id="Service_RpcAccess_Remote">
-        <dropdownList refId="RpcAccess_Remote_Setting" noSort="true" defaultItem="0">Pick one of the following settings:</dropdownList>
+        <dropdownList refId="RpcAccess_Remote_Setting" noSort="true" defaultItem="0">Choisissez l’un des paramètres suivants :</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

@@ -3990,13 +3990,13 @@ si vous désactivez ou ne configurez pas cette stratégie, les touches d’accè
 
 pour plus d’informations, voir https://go.microsoft.com/fwlink/?linkid=2102115</string>
       <string id="ResetZoomForDialogInIEMode">Rétablir le zoom par défaut pour les boîtes de dialogue HTML en mode Internet Explorer</string>
-      <string id="IE_ExplainResetZoomForDialogInIEMode">Ce paramètre de stratégie permet aux administrateurs de rétablir le zoom par défaut pour les boîtes de dialogue HTML en mode Internet Explorer.
+      <string id="IE_ExplainResetZoomForDialogInIEMode">This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.
 
-Si vous activez cette stratégie, le zoom d’une boîte de dialogue HTML en mode Internet Explorer n’est pas propagé à partir de sa page parente.
+If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
 
-Si vous désactivez ou ne configurez pas cette stratégie, le zoom d’une boîte de dialogue HTML en mode Internet Explorer est défini en fonction du zoom de sa page parente.
+If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
 
-Pour plus d’informations, voir https://go.microsoft.com/fwlink/?linkid=2102115</string>
+For more information, see https://go.microsoft.com/fwlink/?linkid=2220107</string>
       <string id="DisableInternetExplorerApp">Désactiver Internet Explorer 11 comme navigateur autonome</string>
       <string id="IE_ExplainDisableInternetExplorerApp">Cette stratégie vous permet de limiter le lancement d’Internet Explorer en tant que navigateur autonome.
 
@@ -4007,12 +4007,12 @@ Si vous activez cette stratégie, elle :
 -Remplace toutes les autres stratégies qui redirigent vers Internet Explorer 11.
 
 Si vous désactivez ce paramètre de stratégie ou si vous ne le configurez pas, tous les sites sont ouverts à l’aide des paramètres actuels du navigateur actif. Remarque : le canal stable Microsoft Edge doit être installé pour que cette stratégie prenne effet.</string>
-      <string id="DisableIEAppDeprecationNotification">Hide Internet Explorer 11 retirement notification</string>
-      <string id="IE_ExplainDisableIEAppDeprecationNotification">This policy setting allows you to manage whether the notification bar reminder that Internet Explorer is being retired is displayed. By default, the Notification bar is displayed in Internet Explorer 11.
+      <string id="DisableIEAppDeprecationNotification">Masquer la notification de retrait d'Internet Explorer 11</string>
+      <string id="IE_ExplainDisableIEAppDeprecationNotification">Ce paramètre de stratégie vous permet d’indiquer si le rappel de la barre de notification indiquant que Internet Explorer est en cours de retrait s’affiche. Par défaut, la barre de notification est affichée dans Internet Explorer 11.
 
-If you enable this policy setting, the Notification bar will not be displayed in Internet Explorer 11.
+Si vous activez ce paramètre de stratégie, la barre de notification n’est pas affichée dans Internet Explorer 11.
 
-If you disable, or do not configure, this policy setting, the Notification bar will be displayed in Internet Explorer 11.</string>
+Si vous désactivez ce paramètre de stratégie ou si vous ne le configurez pas, la barre de notification s’affiche dans Internet Explorer 11.</string>
       <string id="NotifyDisableIEOptions_Never">Jamais</string>
       <string id="NotifyDisableIEOptions_Always">Toujours</string>
       <string id="NotifyDisableIEOptions_OncePerUser">Une fois par utilisateur</string>
