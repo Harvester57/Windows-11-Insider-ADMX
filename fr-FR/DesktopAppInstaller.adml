@@ -45,6 +45,14 @@ Si vous ne configurez pas cette stratégie, les paramètres d’administrateur G
 Si vous activez ou ne configurez pas cette stratégie, les utilisateurs pourront activer la fonction de remplacement la validation de sécurité SHA256 dans les paramètres du Gestionnaire de package Windows.
 
 Si vous désactivez cette stratégie, les utilisateurs ne pourront pas activer la fonction de remplacement la validation de sécurité SHA256 dans les paramètres du Gestionnaire de package Windows.</string>
+      <string id="EnableLocalArchiveMalwareScanOverride">Enable App Installer Local Archive Malware Scan Override</string>
+      <string id="EnableLocalArchiveMalwareScanOverrideExplanation">This policy controls the ability to override malware vulnerability scans when installing an archive file using a local manifest using the command line arguments.
+
+If you enable this policy, users can override the malware scan when performing a local manifest install of an archive file.
+
+If you disable this policy, users will be unable to override the malware scan of an archive file when installing using a local manifest.
+
+If you do not configure this policy, the Windows Package Manager administrator settings will be adhered to.</string>
       <string id="EnableDefaultSource">Activer la source par défaut du Programme d'installation d'application</string>
       <string id="EnableDefaultSourceExplanation">Cette stratégie contrôle la source par défaut incluse dans le Gestionnaire de package Windows.
 
