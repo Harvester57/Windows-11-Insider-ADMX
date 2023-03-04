@@ -45,14 +45,14 @@ Si vous ne configurez pas cette stratégie, les paramètres d’administrateur G
 Si vous activez ou ne configurez pas cette stratégie, les utilisateurs pourront activer la fonction de remplacement la validation de sécurité SHA256 dans les paramètres du Gestionnaire de package Windows.
 
 Si vous désactivez cette stratégie, les utilisateurs ne pourront pas activer la fonction de remplacement la validation de sécurité SHA256 dans les paramètres du Gestionnaire de package Windows.</string>
-      <string id="EnableLocalArchiveMalwareScanOverride">Enable App Installer Local Archive Malware Scan Override</string>
-      <string id="EnableLocalArchiveMalwareScanOverrideExplanation">This policy controls the ability to override malware vulnerability scans when installing an archive file using a local manifest using the command line arguments.
+      <string id="EnableLocalArchiveMalwareScanOverride">Activer le remplacement de l’analyse des programmes malveillants des archives locales Windows Programme d'installation d'application</string>
+      <string id="EnableLocalArchiveMalwareScanOverrideExplanation">Cette stratégie contrôle la possibilité de remplacer les analyses de vulnérabilités de programmes malveillants lors de l’installation d’un fichier d’archive à l’aide d’un manifeste local à l’aide des arguments de ligne de commande.
 
-If you enable this policy, users can override the malware scan when performing a local manifest install of an archive file.
+Si vous activez ce paramètre de stratégie, les utilisateurs peuvent remplacer l’analyse des programmes malveillants lors de l’installation d’un manifeste local d’un fichier d’archive.
 
-If you disable this policy, users will be unable to override the malware scan of an archive file when installing using a local manifest.
+Si vous désactivez cette stratégie, les utilisateurs ne peuvent pas remplacer l’analyse des programmes malveillants d’un fichier d’archive lors de l’installation à l’aide d’un manifeste local.
 
-If you do not configure this policy, the Windows Package Manager administrator settings will be adhered to.</string>
+Si vous ne configurez pas cette stratégie, les paramètres d’administrateur Gestionnaire de package Windows sont conformes.</string>
       <string id="EnableDefaultSource">Activer la source par défaut du Programme d'installation d'application</string>
       <string id="EnableDefaultSourceExplanation">Cette stratégie contrôle la source par défaut incluse dans le Gestionnaire de package Windows.
 

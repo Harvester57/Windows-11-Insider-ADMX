@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
-  <displayName>Windows Sandbox</displayName>
-  <description>Turn on Windows Sandbox in Managed Mode</description>
+  <displayName>Bac à sable Windows</displayName>
+  <description>Activer Bac à sable Windows en mode géré</description>
   <resources>
     <stringTable>
-      <string id="WindowsSandbox_DisplayName">Windows Sandbox</string>
+      <string id="WindowsSandbox_DisplayName">Bac à sable Windows</string>
       <!--Allow vGPU-->
-      <string id="WindowsSandbox_AllowVGPU_DisplayName">Allow vGPU sharing for Windows Sandbox</string>
-      <string id="WindowsSandbox_AllowVGPU_Explain">This policy setting is to enable or disable the virtualized GPU. 
+      <string id="WindowsSandbox_AllowVGPU_DisplayName">Autoriser le partage vGPU pour Bac à sable Windows</string>
+      <string id="WindowsSandbox_AllowVGPU_Explain">Ce paramètre de stratégie consiste à activer ou désactiver le GPU virtualisé. 
 
-If you enable this policy setting, vGPU will be supported in the Windows Sandbox.
+Si vous activez ce paramètre de stratégie, vGPU sera pris en charge dans Bac à sable Windows.
 
-If you disable this policy setting, Windows Sandbox will use software rendering, which can be slower than virtualized GPU.
+Si vous désactivez ce paramètre de stratégie, Bac à sable Windows utilisera le rendu logiciel, qui peut être plus lent que le GPU virtualisé.
 
-If you do not configure this policy setting, vGPU will be enabled. 
+Si vous ne configurez pas ce paramètre de stratégie, vGPU sera activé. 
 
-Note that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
+Notez que l'activation du GPU virtualisé peut potentiellement augmenter la surface d'attaque du bac à sable.
 
 </string>
 
       <!--Allow Networking-->
-      <string id="WindowsSandbox_AllowNetworking_DisplayName">Allow networking in Windows Sandbox</string>
-      <string id="WindowsSandbox_AllowNetworking_Explain">This policy setting enables or disables networking in the sandbox. You can disable network access to decrease the attack surface exposed by the sandbox.
+      <string id="WindowsSandbox_AllowNetworking_DisplayName">Autoriser la mise en réseau dans Bac à sable Windows</string>
+      <string id="WindowsSandbox_AllowNetworking_Explain">Ce paramètre de stratégie active ou désactive la mise en réseau dans le bac à sable (sandbox). Vous pouvez désactiver l’accès réseau pour réduire la surface d’attaque exposée par le bac à sable (sandbox).
 
-If you enable this policy setting, networking is done by creating a virtual switch on the host, and connects the Windows Sandbox to it via a virtual NIC.
+Si vous activez ce paramètre de stratégie, la mise en réseau est effectuée en créant un commutateur virtuel sur l’ordinateur hôte et connecte le Bac à sable Windows à celui-ci via une carte réseau virtuelle.
 
-If you disable this policy setting, networking is disabled in Windows Sandbox.
+Si vous désactivez ce paramètre de stratégie, la mise en réseau est désactivée dans Bac à sable Windows.
 
-If you do not configure this policy setting, networking will be enabled. 
+Si vous ne configurez pas ce paramètre de stratégie, la mise en réseau est activée. 
 
-Note that enabling networking can expose untrusted applications to the internal network.
+Notez que l’activation de la mise en réseau peut exposer des applications non approuvées au réseau interne.
 
  </string>
 
  <!--Allow Audio Input-->
-      <string id="WindowsSandbox_AllowAudioInput_DisplayName">Allow audio input in Windows Sandbox</string>
-      <string id="WindowsSandbox_AllowAudioInput_Explain">This policy setting enables or disables audio input to the Sandbox. 
+      <string id="WindowsSandbox_AllowAudioInput_DisplayName">Autoriser l'entrée audio dans Bac à sable Windows</string>
+      <string id="WindowsSandbox_AllowAudioInput_Explain">Ce paramètre de stratégie active ou désactive l'entrée audio vers la Sandbox. 
 
-If you enable this policy setting, Windows Sandbox will be able to receive audio input from the user. Applications using a microphone may require this setting.
+Si vous activez ce paramètre de stratégie, Bac à sable Windows pourra recevoir l'entrée audio de l'utilisateur. Les applications utilisant un microphone peuvent nécessiter ce réglage.
 
-If you disable this policy setting, Windows Sandbox will not be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
+Si vous désactivez ce paramètre de stratégie, Bac à sable Windows ne pourra pas recevoir d'entrée audio de l'utilisateur. Les applications utilisant un microphone peuvent ne pas fonctionner correctement avec ce paramètre.
 
-If you do not configure this policy setting, audio input will be enabled. 
+Si vous ne configurez pas ce paramètre de stratégie, l'entrée audio sera activée. 
 
-Note that there may be security implications of exposing host audio input to the container.
+Notez que l'exposition de l'entrée audio de l'hôte au conteneur peut avoir des implications sur la sécurité.
 
  </string>
 
  <!--Allow Video Input-->
-      <string id="WindowsSandbox_AllowVideoInput_DisplayName">Allow video input in Windows Sandbox</string>
-      <string id="WindowsSandbox_AllowVideoInput_Explain">This policy setting enables or disables video input to the Sandbox. 
+      <string id="WindowsSandbox_AllowVideoInput_DisplayName">Autoriser l'entrée vidéo dans Bac à sable Windows</string>
+      <string id="WindowsSandbox_AllowVideoInput_Explain">Ce paramètre de stratégie active ou désactive l'entrée vidéo dans la Sandbox. 
 
-If you enable this policy setting, video input is enabled in Windows Sandbox.
+Si vous activez ce paramètre de stratégie, l'entrée vidéo est activée dans Bac à sable Windows.
 
-If you disable this policy setting, video input is disabled in Windows Sandbox. Applications using video input may not function properly in Windows Sandbox.
+Si vous désactivez ce paramètre de stratégie, l'entrée vidéo est désactivée dans Bac à sable Windows. Les applications utilisant l'entrée vidéo peuvent ne pas fonctionner correctement dans Bac à sable Windows.
 
-If you do not configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
+Si vous ne configurez pas ce paramètre de stratégie, l'entrée vidéo sera désactivée. Les applications qui utilisent une entrée vidéo peuvent ne pas fonctionner correctement dans Bac à sable Windows.
  
-Note that there may be security implications of exposing host video input to the container. 
+Notez que l'exposition de l'entrée vidéo de l'hôte au conteneur peut avoir des conséquences sur la sécurité. 
 </string>
 
  <!--Printer Redirection-->
-      <string id="WindowsSandbox_AllowPrinterRedirection_DisplayName">Allow printer sharing with Windows Sandbox</string>
-      <string id="WindowsSandbox_AllowPrinterRedirection_Explain">This policy setting enables or disables printer sharing from the host into the Sandbox.
+      <string id="WindowsSandbox_AllowPrinterRedirection_DisplayName">Autoriser le partage d'imprimante avec Bac à sable Windows</string>
+      <string id="WindowsSandbox_AllowPrinterRedirection_Explain">Ce paramètre de stratégie active ou désactive le partage d’imprimantes de l’hôte dans le bac à sable (sandbox).
 
-If you enable this policy setting, host printers will be shared into Windows Sandbox. 
+Si vous activez ce paramètre de stratégie, les imprimantes hôtes sont partagées en Bac à sable Windows. 
 
-If you disable this policy setting, Windows Sandbox will not be able to view printers from the host.
+Si vous désactivez ce paramètre de stratégie, Bac à sable Windows ne pourrez pas afficher les imprimantes de l’hôte.
 
-If you do not configure this policy setting, printer redirection will be disabled.
+Si vous ne configurez pas ce paramètre de stratégie, la redirection de l’imprimante est désactivée.
 
  </string>
 
  <!--Clipboard Redirection-->
-      <string id="WindowsSandbox_AllowClipboardRedirection_DisplayName">Allow clipboard sharing with Windows Sandbox</string>
-      <string id="WindowsSandbox_AllowClipboardRedirection_Explain">This policy setting enables or disables clipboard sharing with the sandbox.
+      <string id="WindowsSandbox_AllowClipboardRedirection_DisplayName">Autoriser le partage du presse-papiers avec Bac à sable Windows</string>
+      <string id="WindowsSandbox_AllowClipboardRedirection_Explain">Ce paramètre de stratégie active ou désactive le partage du Presse-papiers avec le bac à sable (sandbox).
 
-If you enable this policy setting, copy and paste between the host and Windows Sandbox are permitted. 
+Si vous activez ce paramètre de stratégie, le copier-coller entre l’hôte et Bac à sable Windows est autorisé. 
 
-If you disable this policy setting, copy and paste in and out of Sandbox will be restricted.
+Si vous désactivez ce paramètre de stratégie, le copier-coller dans et hors du bac à sable (sandbox) est restreint.
 
-If you do not configure this policy setting, clipboard sharing will be enabled.
+Si vous ne configurez pas ce paramètre de stratégie, le partage du Presse-papiers est activé.
  </string>
     </stringTable>
   </resources>

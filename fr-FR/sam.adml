@@ -37,24 +37,24 @@ Remarque: pour éviter des perturbations inattendues, ce paramètre ne doit pas 
 
 Plus d’informations sont disponibles sur https://go.microsoft.com/fwlink/?linkid=2116430.
 </string>
-      <string id="SamrChangeUserPasswordApiPolicy">Configure SAM change password RPC methods policy</string>
-      <string id="SamrChangeUserPasswordApiPolicyBlockAll">Block all change password RPC methods</string>
-      <string id="SamrChangeUserPasswordApiPolicyAllowSecure">Allow strong encryption change password RPC method only</string>
-      <string id="SamrChangeUserPasswordApiPolicyAllowAll">Allow all change password RPC methods</string>
-      <string id="SamrChangeUserPasswordApiPolicyExplain">This policy enables an administrator to configure the remote usage of change user password RPC methods in security account manager(SAM).
+      <string id="SamrChangeUserPasswordApiPolicy">Configurer la stratégie de méthodes RPC de modification de mot de passe SAM</string>
+      <string id="SamrChangeUserPasswordApiPolicyBlockAll">Bloquer toutes les méthodes RPC de modification du mot de passe</string>
+      <string id="SamrChangeUserPasswordApiPolicyAllowSecure">Autoriser uniquement la méthode RPC de modification de mot de passe par chiffrement fort</string>
+      <string id="SamrChangeUserPasswordApiPolicyAllowAll">Autoriser toutes les méthodes RPC de modification du mot de passe</string>
+      <string id="SamrChangeUserPasswordApiPolicyExplain">Cette stratégie permet à un administrateur de configurer l’utilisation à distance des méthodes RPC de changement de mot de passe utilisateur dans le gestionnaire de compte de sécurité (SAM).
 
-When the policy is enabled, following options are supported:
+Lorsque la stratégie est activée, les options suivantes sont prises en charge :
 
-Block all change password RPC methods: block remote usage of all the security account manager(SAM) change password RPC methods.
+Bloquer toutes les méthodes RPC de modification de mot de passe : bloquer l’utilisation à distance de toutes les méthodes RPC de modification du mot de passe du gestionnaire de comptes de sécurité (SAM).
 
-Allow strong encryption change password RPC method: allow remote use of the change password RPC method which uses strong encryption and blocks remote use of weak encryption methods.
+Autoriser la méthode RPC de modification du mot de passe de chiffrement fort : autoriser l’utilisation à distance de la méthode RPC de changement de mot de passe qui utilise un chiffrement fort et bloque l’utilisation à distance de méthodes de chiffrement faibles.
 
-Allow all change password RPC methods: allows remote usage of all the change password RPC methods irrespetive of the encryption.
+Autoriser toutes les méthodes RPC de changement de mot de passe : autorise l’utilisation à distance de toutes les méthodes RPC de mot de passe modifiées indépendamment du chiffrement.
 
-Default policy: 1. Domain member computers - block all change password RPC methods.
-                2. Domain controllers - allow strong encryption change password RPC method.
+Stratégie par défaut : 1. Ordinateurs membres du domaine – bloquer toutes les méthodes RPC de changement de mot de passe.
+                2. Contrôleurs de domaine : autorisez la méthode RPC de changement de mot de passe de chiffrement fort.
 
-Note: If the policy is disabled or not configured, the machine will use the default policy.
+ Remarque : si la stratégie est désactivée ou non configurée, l’ordinateur utilise la stratégie par défaut.
 </string>
     </stringTable>
     <presentationTable>
@@ -62,7 +62,7 @@ Note: If the policy is disabled or not configured, the machine will use the defa
         <dropdownList refId="SamNGCKeyROCAValidation_Settings" noSort="true" defaultItem="2">Options de gestion des clés WHfB vulnérables au ROCA</dropdownList>
       </presentation>
       <presentation id="SamrChangeUserPasswordApiPolicy">
-        <dropdownList refId="SamrChangeUserPasswordApiPolicySettings" noSort="true" defaultItem="1">Options for Sam password change RPC method policy:</dropdownList>
+        <dropdownList refId="SamrChangeUserPasswordApiPolicySettings" noSort="true" defaultItem="1">Options pour la stratégie de méthode RPC de modification du mot de passe Sam :</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

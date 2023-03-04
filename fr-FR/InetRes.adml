@@ -3990,13 +3990,13 @@ si vous désactivez ou ne configurez pas cette stratégie, les touches d’accè
 
 pour plus d’informations, voir https://go.microsoft.com/fwlink/?linkid=2102115</string>
       <string id="ResetZoomForDialogInIEMode">Rétablir le zoom par défaut pour les boîtes de dialogue HTML en mode Internet Explorer</string>
-      <string id="IE_ExplainResetZoomForDialogInIEMode">This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.
+      <string id="IE_ExplainResetZoomForDialogInIEMode">Ce paramètre de stratégie permet aux administrateurs de rétablir le zoom par défaut pour les boîtes de dialogue HTML en mode Internet Explorer.
 
-If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
+Si vous activez cette stratégie, le zoom d’une boîte de dialogue HTML en mode Internet Explorer n’est pas propagé à partir de sa page parente.
 
-If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
+Si vous désactivez ou ne configurez pas cette stratégie, le zoom d’une boîte de dialogue HTML en mode Internet Explorer est défini en fonction du zoom de sa page parente.
 
-For more information, see https://go.microsoft.com/fwlink/?linkid=2220107</string>
+Pour plus d’informations, consultez https://go.microsoft.com/fwlink/?linkid=2220107</string>
       <string id="DisableInternetExplorerApp">Désactiver Internet Explorer 11 comme navigateur autonome</string>
       <string id="IE_ExplainDisableInternetExplorerApp">Cette stratégie vous permet de limiter le lancement d’Internet Explorer en tant que navigateur autonome.
 

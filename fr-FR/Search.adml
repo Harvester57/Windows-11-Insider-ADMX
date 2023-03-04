@@ -300,23 +300,23 @@ Si cette option est activée, la fonction de recherche et Cortana peuvent accéd
       <string id="DisableSearch_ExplainText">Si vous activez ce paramètre de stratégie, l’interface utilisateur de recherche est désactivée avec tous ses points d’entrée, tels que les raccourcis clavier, les mouvements du pavé tactile et la recherche de type dans le menu Démarrer. La zone de recherche du menu Démarrer et le bouton de la barre des tâches de recherche seront également masqués.
 
 Si vous désactivez ou ne configurez pas ce paramètre de stratégie, l’utilisateur peut ouvrir l’interface utilisateur de recherche et ses différents points d’entrée sont affichés.</string>
-      <string id="ConfigureSearchOnTaskbarMode">Configures search on the taskbar</string>
-      <string id="ConfigureSearchOnTaskbarMode_Help">This policy setting allows you to configure search on the taskbar.
+      <string id="ConfigureSearchOnTaskbarMode">Configure la recherche dans la barre des tâches</string>
+      <string id="ConfigureSearchOnTaskbarMode_Help">Ce paramètre de stratégie vous permet de configurer la recherche dans la barre des tâches.
 
-If you enable this policy setting and set it to hide, search on taskbar will be hidden by default. Users cannot change it in Settings.
+Si vous activez ce paramètre de stratégie et que vous le définissez sur Masquer, la recherche dans la barre des tâches sera masquée par défaut. Les utilisateurs ne peuvent pas le modifier dans les paramètres.
 
-If you enable this policy setting and set it to search icon only, the search icon will be displayed on the taskbar by default. Users cannot change it in Settings.
+Si vous activez ce paramètre de stratégie et que vous le définissez sur l'icône de recherche uniquement, l'icône de recherche s'affichera par défaut dans la barre des tâches. Les utilisateurs ne peuvent pas le modifier dans les paramètres.
 
-If you enable this policy setting and set it to search icon and label, the search icon and label will be displayed on the taskbar by default. Users cannot change it in Settings.
+Si vous activez ce paramètre de stratégie et que vous le définissez sur l'icône et l'étiquette de recherche, l'icône et l'étiquette de recherche s'afficheront par défaut dans la barre des tâches. Les utilisateurs ne peuvent pas le modifier dans les paramètres.
 
-If you enable this policy setting and set it to search box, the search box will be displayed on the taskbar by default. Users cannot change it in Settings.
+Si vous activez ce paramètre de stratégie et que vous le définissez sur la zone de recherche, la zone de recherche s'affichera par défaut dans la barre des tâches. Les utilisateurs ne peuvent pas le modifier dans les paramètres.
 
-If you disable or do not configure this policy setting, search on taskbar will be configured according to the defaults for your Windows edition. Users will be able to change search on taskbar in Settings.
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, la recherche dans la barre des tâches sera configurée selon les valeurs par défaut de votre édition Windows. Les utilisateurs pourront modifier la recherche dans la barre des tâches dans les paramètres.
       </string>
-      <string id="SearchOnTaskbarModeEnum_Hidden">Hide</string>
-      <string id="SearchOnTaskbarModeEnum_SearchIconOnly">Search icon only</string>
-      <string id="SearchOnTaskbarModeEnum_SearchIconAndLabel">Search icon and label</string>
-      <string id="SearchOnTaskbarModeEnum_SearchBox">Search box</string>
+      <string id="SearchOnTaskbarModeEnum_Hidden">Masquer</string>
+      <string id="SearchOnTaskbarModeEnum_SearchIconOnly">Icône de recherche uniquement</string>
+      <string id="SearchOnTaskbarModeEnum_SearchIconAndLabel">Icône et étiquette Rechercher</string>
+      <string id="SearchOnTaskbarModeEnum_SearchBox">Zone de recherche</string>
     </stringTable>
     <presentationTable>
       <presentation id="RichAttachmentPreviews">
@@ -407,7 +407,7 @@ If you disable or do not configure this policy setting, search on taskbar will b
         <dropdownList refId="AllowCortanaAAD_Dropdown" noSort="true" defaultItem="0">Paramètre Cortana dans AAD</dropdownList>
       </presentation>
       <presentation id="ConfigureSearchOnTaskbarMode">
-        <dropdownList refId="ConfigureSearchOnTaskbarMode_Dropdown" noSort="true" defaultItem="0">Search on the taskbar</dropdownList>
+        <dropdownList refId="ConfigureSearchOnTaskbarMode_Dropdown" noSort="true" defaultItem="0">Rechercher dans la barre des tâches</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
