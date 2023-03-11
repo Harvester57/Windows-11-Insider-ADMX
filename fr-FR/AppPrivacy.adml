@@ -129,6 +129,21 @@ Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les employ
 
 Si une application est ouverte lorsque cet objet de stratégie de groupe est appliqué sur un appareil, les employés doivent redémarrer l’application ou l’appareil pour que les modifications de stratégie soient appliquées à l’application.
       </string>
+      <string id="LetAppsAccessHumanPresence_Name">Let Windows apps access presence sensing</string>
+      <string id="LetAppsAccessHumanPresence_Explain">This policy setting specifies whether Windows apps can access presence sensing.
+
+You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+
+If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings &gt; Privacy on the device.
+
+If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization cannot change it.
+
+If you choose the "Force Deny" option, Windows apps are not allowed to access presence sensing and employees in your organization cannot change it.
+
+If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings &gt; Privacy on the device.
+
+If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
+      </string>
       <string id="LetAppsAccessLocation_Name">Permettre aux applications Windows d’accéder à la localisation</string>
       <string id="LetAppsAccessLocation_Explain">Ce paramètre de stratégie spécifie si les applications Windows peuvent accéder à la localisation.
 
@@ -440,6 +455,15 @@ Si une application est ouverte lorsque cet objet de stratégie de groupe est app
         <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps_List"/>
       </presentation>
+      <presentation id="LetAppsAccessHumanPresence">
+        <dropdownList refId="LetAppsAccessHumanPresence_Enum" noSort="true" defaultItem="0">Default for all apps:</dropdownList>
+        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <multiTextBox refId="LetAppsAccessHumanPresence_UserInControlOfTheseApps_List"/>
+        <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <multiTextBox refId="LetAppsAccessHumanPresence_ForceAllowTheseApps_List"/>
+        <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <multiTextBox refId="LetAppsAccessHumanPresence_ForceDenyTheseApps_List"/>
+      </presentation>
       <presentation id="LetAppsAccessLocation">
         <dropdownList refId="LetAppsAccessLocation_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
         <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
@@ -496,7 +520,7 @@ Si une application est ouverte lorsque cet objet de stratégie de groupe est app
       </presentation>
       <presentation id="LetAppsAccessAccountInfo">
         <dropdownList refId="LetAppsAccessAccountInfo_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
-        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessAccountInfo_UserInControlOfTheseApps_List"/>
         <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessAccountInfo_ForceAllowTheseApps_List"/>
@@ -516,36 +540,36 @@ Si une application est ouverte lorsque cet objet de stratégie de groupe est app
         <dropdownList refId="LetAppsAccessTasks_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
         <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessTasks_UserInControlOfTheseApps_List"/>
-        <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessTasks_ForceAllowTheseApps_List"/>
-        <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessTasks_ForceDenyTheseApps_List"/>
       </presentation>
       <presentation id="LetAppsAccessTrustedDevices">
         <dropdownList refId="LetAppsAccessTrustedDevices_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
         <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessTrustedDevices_UserInControlOfTheseApps_List"/>
-        <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Autoriser de force ces applications spécifiques (utiliser des noms de familles de packages) :</text>
         <multiTextBox refId="LetAppsAccessTrustedDevices_ForceAllowTheseApps_List"/>
         <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessTrustedDevices_ForceDenyTheseApps_List"/>
       </presentation>
       <presentation id="LetAppsRunInBackground">
         <dropdownList refId="LetAppsRunInBackground_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
-        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsRunInBackground_UserInControlOfTheseApps_List"/>
-        <text>Autoriser de force ces applications spécifiques (utiliser des noms de familles de packages) :</text>
+        <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsRunInBackground_ForceAllowTheseApps_List"/>
-        <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsRunInBackground_ForceDenyTheseApps_List"/>
       </presentation>
       <presentation id="LetAppsGetDiagnosticInfo">
         <dropdownList refId="LetAppsGetDiagnosticInfo_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
         <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsGetDiagnosticInfo_UserInControlOfTheseApps_List"/>
-        <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Forcer l’autorisation pour ces applications particulières (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsGetDiagnosticInfo_ForceAllowTheseApps_List"/>
-        <text>Forcer le refus pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Forcer le refus pour ces applications particulières (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsGetDiagnosticInfo_ForceDenyTheseApps_List"/>
       </presentation>
       <presentation id="LetAppsAccessGazeInput">
@@ -565,11 +589,11 @@ Si une application est ouverte lorsque cet objet de stratégie de groupe est app
       </presentation>
       <presentation id="LetAppsAccessBackgroundSpatialPerception">
         <dropdownList refId="LetAppsAccessBackgroundSpatialPerception_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
-        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
+        <text>Put user in control of these specific apps (use Package Family Names):</text>
         <multiTextBox refId="LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List"/>
-        <text>Forcer l’autorisation pour ces applications particulières (utiliser les noms de la famille de packages) :</text>
+        <text>Force allow these specific apps (use Package Family Names):</text>
         <multiTextBox refId="LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List"/>
-        <text>Forcer le refus pour ces applications particulières (utiliser les noms de la famille de packages) :</text>
+        <text>Force deny these specific apps (use Package Family Names):</text>
         <multiTextBox refId="LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List"/>
       </presentation>
     </presentationTable>
