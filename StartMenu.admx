@@ -557,6 +557,10 @@
       <parentCategory ref="windows:StartMenu" />
       <supportedOn ref="windows:SUPPORTED_Windows_11_0_SE" />
     </policy>
+    <policy name="HideRecoPersonalizedSites" class="Both" displayName="$(string.HideRecoPersonalizedSites)" explainText="$(string.HideRecoPersonalizedSites_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="HideRecoPersonalizedSites">
+      <parentCategory ref="windows:StartMenu" />
+      <supportedOn ref="windows:SUPPORTED_Windows_11_0_SE" />
+    </policy>
     <policy name="DisableContextMenusInStart" class="Both" displayName="$(string.DisableContextMenusInStart)" explainText="$(string.DisableContextMenusInStart_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="DisableContextMenusInStart">
       <parentCategory ref="windows:StartMenu" />
       <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS4" />

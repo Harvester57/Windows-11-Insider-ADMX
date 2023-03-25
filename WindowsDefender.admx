@@ -117,8 +117,21 @@
             <elements>
                 <text id="DeviceControl_DataDuplicationRemoteLocation" valueName="DataDuplicationRemoteLocation" required="true" />
             </elements>
+        </policy>				
+		<policy name="DeviceControl_DataDuplicationLocalRetentionPeriod" class="Machine" displayName="$(string.DeviceControl_DataDuplicationLocalRetentionPeriod)" explainText="$(string.DeviceControl_DataDuplicationLocalRetentionPeriod_Explain)" key="Software\Policies\Microsoft\Windows Defender\Device Control" presentation="$(presentation.DeviceControl_DataDuplicationLocalRetentionPeriod)">
+            <parentCategory ref="DeviceControl" />
+            <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS1" />
+            <elements>
+                <decimal id="DeviceControl_DataDuplicationLocalRetentionPeriod" valueName="DataDuplicationLocalRetentionPeriod" minValue="0" maxValue="10000"  required="true"/>
+            </elements>
         </policy>
-
+		<policy name="DeviceControl_SecuredDevicesConfiguration" class="Machine" displayName="$(string.DeviceControl_SecuredDevicesConfiguration)" explainText="$(string.DeviceControl_SecuredDevicesConfiguration_Explain)" key="Software\Policies\Microsoft\Windows Defender\Device Control" presentation="$(presentation.DeviceControl_SecuredDevicesConfiguration)">
+            <parentCategory ref="DeviceControl" />
+            <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS1" />
+            <elements>
+                <text id="DeviceControl_SecuredDevicesConfiguration" valueName="SecuredDevicesConfiguration" />
+            </elements>
+        </policy>
         <policy name="DisableAutoExclusions" class="Machine" displayName="$(string.DisableAutoExclusions)" explainText="$(string.DisableAutoExclusions_Explain)" key="Software\Policies\Microsoft\Windows Defender\Exclusions" valueName="DisableAutoExclusions">
             <parentCategory ref="Exclusions" />
             <supportedOn ref="windows:SUPPORTED_Windows_10_0_SERVER" />
@@ -1434,7 +1447,7 @@
             </disabledValue>
         </policy>
         <policy name="ExploitGuard_EnableNetworkProtection" class="Machine" displayName="$(string.ExploitGuard_EnableNetworkProtection)" explainText="$(string.ExploitGuard_EnableNetworkProtection_Explain)" key="Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection" valueName="EnableNetworkProtection" presentation="$(presentation.ExploitGuard_EnableNetworkProtection)">
-            "<parentCategory ref="ExploitGuard_NetworkProtection" />
+            <parentCategory ref="ExploitGuard_NetworkProtection" />
             <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS3" />
             <elements>
             <enum id="ExploitGuard_EnableNetworkProtection" valueName="EnableNetworkProtection" required="true">
@@ -1521,7 +1534,7 @@
             <parentCategory ref="Features" />
             <supportedOn ref="windows:SUPPORTED_Windows_10_0" />
             <enabledValue>
-                <decimal value="0" />
+                <decimal value="1" />
             </enabledValue>
             <disabledValue>
                 <decimal value="2" />

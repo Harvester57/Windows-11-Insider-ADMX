@@ -504,12 +504,12 @@ Si vous désactivez ou ne configurez pas ce paramètre, aucun point de restaurat
 Si vous activez ce paramètre, les lecteurs réseau mappés sont analysés.
 
 Si vous désactivez ou ne configurez pas ce paramètre, les lecteurs réseau mappés ne sont pas analysés.</string>
-    <string id="Scan_DisableScanningNetworkFiles">Analyser les fichiers réseau</string>
-    <string id="Scan_DisableScanningNetworkFiles_Explain">Ce paramètre de stratégie vous permet de configurer l’analyse des fichiers réseau. Il est recommandé de ne pas activer ce paramètre.
+    <string id="Scan_DisableScanningNetworkFiles">Configure scanning of network files</string>
+    <string id="Scan_DisableScanningNetworkFiles_Explain">This policy setting allows the scanning of network files using on access protection. The default is enabled. Recommended to remain enabled in most cases.
 
-Si vous activez ce paramètre, les fichiers réseau sont analysés.
+    If you enable or do not configure this setting, network files will be scanned.
 
-Si vous désactivez ou ne configurez pas ce paramètre, les fichiers réseau ne sont pas analysés.</string>
+    If you disable this setting, network files will not be scanned.</string>
     <string id="Scan_LocalSettingOverrideAvgCPULoadFactor">Configurer une valeur de remplacement de paramètre locale pour le pourcentage maximal d’utilisation processeur</string>
     <string id="Scan_LocalSettingOverrideAvgCPULoadFactor_Explain">Ce paramètre de stratégie configure une valeur de remplacement locale pour la configuration du pourcentage maximal d’utilisation processeur au cours d’une analyse. Ce paramètre peut uniquement être défini par une stratégie de groupe.
 
@@ -1120,17 +1120,33 @@ Si vous désactivez ou ne configurez pas cette stratégie, l’appareil reste da
     <string id="DeviceControl_DataDuplicationRemoteLocation_Explain">
         Définissez l’emplacement distant du fichier de preuves, où le service de Contrôle de périphérique déplacera les données de preuve capturées.
     </string>
+	<string id="DeviceControl_DataDuplicationLocalRetentionPeriod">Set the retention period for files in the local device control cache</string>
+    <string id="DeviceControl_DataDuplicationLocalRetentionPeriod_Explain">
+        This policy setting determines how long device control retains files for evidence in its local cache on the device. Device control keeps a file in its local cache only if it is unable to upload the file to a designated network share or Azure storage. 
+
+        By default, device control retains files in its local cache for 60 days.
+    </string>
+	<string id="DeviceControl_SecuredDevicesConfiguration">Turn on device control for specific device types</string>
+    <string id="DeviceControl_SecuredDevicesConfiguration_Explain">
+        This policy setting controls which device types, identified by their PrimaryIds, will have device control protection turned on. If you enable this setting for certain device types, device control will regulate access to those devices based on the corresponding custom policy. Device control will be turned off for all other types of supported devices, even if custom protection policies are configured for those devices.
+ 
+        This setting currently supports these device types: RemovableMediaDevices, CdRomDevices, WpdDevices, and PrinterDevices. 
+ 
+        If you enable this policy setting but do not specify any PrimaryIds, device control will be turned off across all supported device types.
+ 
+        If you disable or don’t configure this policy setting, device control will be enforced on all supported devicesbased on their corresponding custom policies.
+    </string>
     <string id="Features_DeviceControlEnabled">Contrôle de périphérique</string>
     <string id="DeviceControl_DeviceControlEnabled_Explain">
         Activez ou désactivez le Contrôle de périphérique Defender sur cet ordinateur.
         Remarque : vous devez être inscrit en tant que E3 ou E5 pour que le Contrôle de périphérique soit activé.
     </string>
     <string id="Features_TDTFeatureEnabled">Niveau d’intégration Intel TDT</string>
-    <string id="Features_TDTFeatureEnabled_Explain">Ce paramètre de stratégie configure le niveau d’intégration Intel TDT pour les appareils compatibles Intel TDT.
+    <string id="Features_TDTFeatureEnabled_Explain">This policy setting configures the Intel TDT integration level for Intel TDT-capable devices.
 
-        Si vous ne configurez pas ce paramètre, la valeur par défaut est appliquée. La valeur par défaut est contrôlée par les mises à jour de la veille de sécurité Microsoft. Microsoft active Intel TDT en cas de menace connue.
-
-        Si vous configurez ce paramètre sur Désactivé, l’intégration Intel TDT se désactive.</string>
+        If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat.
+        If you configure this setting to enabled, Intel TDT integration will turn on.
+        If you configure this setting to disabled, Intel TDT integration will turn off.</string>
     <string id="Features_PassiveRemediation">Activer EDR en mode blocage</string>
     <string id="Features_PassiveRemediation_Explain">Ce paramètre de stratégie active ou désactive EDR en mode de blocage (également appelé « correction passive »). EDR en mode blocage est recommandé pour les appareils exécutant Microsoft Defender Antivirus en mode passif. Disponible avec la version de plateforme : 4.18.2202.X
 
@@ -1346,6 +1362,14 @@ Valeurs prises en charge :
     <presentation id="DeviceControl_DataDuplicationRemoteLocation">
     <textBox refId="DeviceControl_DataDuplicationRemoteLocation">
         <label>Définissez l’emplacement distant de duplication des données de contrôle de périphérique.</label>
+    </textBox>
+    </presentation>
+	<presentation id="DeviceControl_DataDuplicationLocalRetentionPeriod">
+		<decimalTextBox refId="DeviceControl_DataDuplicationLocalRetentionPeriod" defaultValue="60">Set the retention period for files in the local device control cache</decimalTextBox>
+    </presentation>
+	<presentation id="DeviceControl_SecuredDevicesConfiguration">
+    <textBox refId="DeviceControl_SecuredDevicesConfiguration">
+        <label>Turn on device control for specific device types</label>
     </textBox>
     </presentation>
    </presentationTable>

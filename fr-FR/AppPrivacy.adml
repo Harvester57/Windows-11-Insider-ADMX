@@ -129,20 +129,20 @@ Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les employ
 
 Si une application est ouverte lorsque cet objet de stratégie de groupe est appliqué sur un appareil, les employés doivent redémarrer l’application ou l’appareil pour que les modifications de stratégie soient appliquées à l’application.
       </string>
-      <string id="LetAppsAccessHumanPresence_Name">Let Windows apps access presence sensing</string>
-      <string id="LetAppsAccessHumanPresence_Explain">This policy setting specifies whether Windows apps can access presence sensing.
+      <string id="LetAppsAccessHumanPresence_Name">Autoriser les applications Windows à accéder à la détection de présence</string>
+      <string id="LetAppsAccessHumanPresence_Explain">Ce paramètre de stratégie spécifie si les applications Windows peuvent accéder à la détection de présence.
 
-You can specify either a default setting for all apps or a per-app setting by specifying a Package Family Name. You can get the Package Family Name for an app by using the Get-AppPackage Windows PowerShell cmdlet. A per-app setting overrides the default setting.
+Vous pouvez spécifier un paramètre par défaut pour toutes les applications ou un paramètre par application en spécifiant un nom de la famille de packages. Vous pouvez obtenir le nom de la famille de packages pour une application à l’aide de l’applet de commande Windows PowerShell Get-AppPackage. Un paramètre par application remplace le paramètre par défaut.
 
-If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access presence sensing by using Settings &gt; Privacy on the device.
+Si vous choisissez l’option « Sous le contrôle de l’utilisateur », les employés de votre organisation peuvent décider si les applications Windows peuvent accéder à la détection de présence à l’aide de Paramètres &gt; Confidentialité sur l’appareil.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access presence sensing and employees in your organization cannot change it.
+Si vous choisissez l’option « Forcer l’autorisation », les applications Windows sont autorisées à accéder à la détection de présence et les employés de votre organisation ne peuvent pas la modifier.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access presence sensing and employees in your organization cannot change it.
+Si vous choisissez l’option « Forcer le refus », les applications Windows ne sont pas autorisées à accéder à la détection de présence et les employés de votre organisation ne peuvent pas la modifier.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access presence sensing by using Settings &gt; Privacy on the device.
+Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les employés de votre organisation peuvent décider si les applications Windows peuvent accéder à la détection de présence à l’aide de Paramètres &gt; Confidentialité sur l’appareil.
 
-If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
+Si une application est ouverte lorsque cet objet de stratégie de groupe est appliqué sur un appareil, les employés doivent redémarrer l’application ou l’appareil pour que les modifications de stratégie soient appliquées à l’application.
       </string>
       <string id="LetAppsAccessLocation_Name">Permettre aux applications Windows d’accéder à la localisation</string>
       <string id="LetAppsAccessLocation_Explain">Ce paramètre de stratégie spécifie si les applications Windows peuvent accéder à la localisation.
@@ -456,7 +456,7 @@ Si une application est ouverte lorsque cet objet de stratégie de groupe est app
         <multiTextBox refId="LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps_List"/>
       </presentation>
       <presentation id="LetAppsAccessHumanPresence">
-        <dropdownList refId="LetAppsAccessHumanPresence_Enum" noSort="true" defaultItem="0">Default for all apps:</dropdownList>
+        <dropdownList refId="LetAppsAccessHumanPresence_Enum" noSort="true" defaultItem="0">Valeur par défaut de toutes les applications :</dropdownList>
         <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessHumanPresence_UserInControlOfTheseApps_List"/>
         <text>Forcer l’autorisation pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
@@ -589,11 +589,11 @@ Si une application est ouverte lorsque cet objet de stratégie de groupe est app
       </presentation>
       <presentation id="LetAppsAccessBackgroundSpatialPerception">
         <dropdownList refId="LetAppsAccessBackgroundSpatialPerception_Enum" noSort="true" defaultItem="0">Valeur par défaut pour toutes les applications :</dropdownList>
-        <text>Put user in control of these specific apps (use Package Family Names):</text>
+        <text>Sous le contrôle de l’utilisateur pour ces applications spécifiques (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List"/>
-        <text>Force allow these specific apps (use Package Family Names):</text>
+        <text>Forcer l’autorisation pour ces applications particulières (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List"/>
-        <text>Force deny these specific apps (use Package Family Names):</text>
+        <text>Forcer le refus pour ces applications particulières (utiliser les noms de la famille de packages) :</text>
         <multiTextBox refId="LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List"/>
       </presentation>
     </presentationTable>

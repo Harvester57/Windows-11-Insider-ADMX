@@ -75,22 +75,22 @@ Si vous désactivez ou ne configurez pas ce paramètre, lorsqu'une application e
         Si vous désactivez ce paramètre de stratégie ou si vous ne le configurez pas, tous les utilisateurs peuvent lancer l’installation des packages d’applications Windows.
       </string>
       <string id="DisableBackgroundAutoUpdates">Ne pas autoriser la mise à jour automatique des applications en arrière-plan</string>
-      <string id="DisableBackgroundAutoUpdatesExplanation">Manages a sideloaded apps' ability to auto-update in the background.
+      <string id="DisableBackgroundAutoUpdatesExplanation">Gère la fonctionnalité de mise à jour automatique en arrière-plan des applications chargées en version test.
 
-        If you enable this policy, sideloaded apps will not auto-update in the background.
+        Si vous activez ce paramètre de stratégie, les applications chargées en version test ne sont pas mises à jour automatiquement en arrière-plan.
 
-        If you disable this policy, sideloaded apps will auto-update in the background.
+        Si vous désactivez cette stratégie, les applications chargées en version test sont mises à jour automatiquement en arrière-plan.
 
-        Default is 'disabled' (key not present).
+        La valeur par défaut est « Désactivé » (clé absente).
       </string>
       <string id="DisableMeteredNetworkBackgroundAutoUpdates">Ne pas autoriser la mise à jour automatique des applications version test en arrière-plan sur un réseau limité</string>
-      <string id="DisableMeteredNetworkBackgroundAutoUpdatesExplanation">Manages a sideloaded apps' ability to auto-update in the background on a metered network.
+      <string id="DisableMeteredNetworkBackgroundAutoUpdatesExplanation">Gère une fonctionnalité de mise à jour automatique des applications version test en arrière-plan sur un réseau limité.
 
-        If you enable this policy, sideloaded apps will not auto-update in the background on a metered network.
+        Si vous activez ce paramètre de stratégie, les applications version test ne sont pas mises à jour automatiquement en arrière-plan sur un réseau limité.
 
-        If you disable this policy, sideloaded apps will auto-update in the background on a metered network.
+        Si vous désactivez ce paramètre de stratégie, les applications version test sont mises à jour automatiquement en arrière-plan sur un réseau limité.
 
-        Default is 'disabled' (key not present).
+        La valeur par défaut est « Désactivé » (clé absente).
       </string>
       <string id="DisablePerUserUnsignedPackagesByDefault">Ne pas autoriser l’installation des packages non signés par utilisateur par défaut (nécessite explicitement l’autorisation par installation)</string>
       <string id="DisablePerUserUnsignedPackagesByDefaultExplanation">Ne pas autoriser l’installation des packages non signés par utilisateur par défaut (nécessite explicitement l’autorisation par installation)
