@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>ReFS group policy</displayName>
+  <description>Group policy settings for ReFS</description>
+  <resources>
+    <stringTable>
+      <string id="ReFS">ReFS</string>
+      <string id="DisableDevDrive">Disable dev drive</string>
+      <string id="DisableDevDriveText">Dev drive is a drive optimized for performance considering developer scenarios and by default no file system filters are attached to it. Enabling this setting will mount a dev drive as a regular drive.
+
+A reboot is required for this setting to take effect.</string>
+    </stringTable>
+
+    <presentationTable>
+      <presentation id="DevDriveOptions"/>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
