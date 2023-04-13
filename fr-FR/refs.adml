@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2023 Microsoft Corporation  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
-  <displayName>ReFS group policy</displayName>
-  <description>Group policy settings for ReFS</description>
+  <displayName>Stratégie de groupe ReFS</displayName>
+  <description>Paramètres de stratégie de groupe pour ReFS</description>
   <resources>
     <stringTable>
       <string id="ReFS">ReFS</string>
-      <string id="DisableDevDrive">Disable dev drive</string>
-      <string id="DisableDevDriveText">Dev drive is a drive optimized for performance considering developer scenarios and by default no file system filters are attached to it. Enabling this setting will mount a dev drive as a regular drive.
+      <string id="DisableDevDrive">Désactiver le lecteur de développement</string>
+      <string id="DisableDevDriveText">Le lecteur de développement est un lecteur optimisé pour les performances en tenant compte des scénarios de développeur et, par défaut, aucun filtre de système de fichiers n’y est lié. L’activation de ce paramètre permet de monter un lecteur de développement en tant que lecteur normal.
 
-A reboot is required for this setting to take effect.</string>
+Un redémarrage est nécessaire pour que ce paramètre prenne effet.</string>
     </stringTable>
 
     <presentationTable>
