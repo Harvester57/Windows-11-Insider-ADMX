@@ -6,14 +6,20 @@
   <resources>
     <stringTable>
       <string id="ReFS">ReFS</string>
-      <string id="DisableDevDrive">Disable dev drive</string>
-      <string id="DisableDevDriveText">Dev drive is a drive optimized for performance considering developer scenarios and by default no file system filters are attached to it. Enabling this setting will mount a dev drive as a regular drive.
+      <string id="EnableDevDrive">Enable dev drive</string>
+      <string id="EnableDevDriveText">Dev drive or developer volume is a volume optimized for performance of developer scenarios. A developer volume allows an administrator to choose file system filters that are attached on the volume.
+
+Disabling this setting will disallow creation of new developer volumes, existing developer volumes will mount as regular volumes.
+
+If this setting is not configured the default policy is to enable developer volumes while allowing antivirus filter to attach on a deveveloper volume.  Further, if not configured, a local administrator can choose to not have antivirus filter attached to a developer volume.
 
 A reboot is required for this setting to take effect.</string>
     </stringTable>
 
     <presentationTable>
-      <presentation id="DevDriveOptions"/>
+      <presentation id="EnableDevDriveOptions">
+        <checkBox refId="DevDriveAllowAntivirusFilter" defaultChecked="true">Let antivirus filter protect dev drives</checkBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

@@ -45,9 +45,15 @@ Si vous activez ce paramètre de stratégie, la protection contre l’hameçonna
 Si vous désactivez ou ne configurez pas ce paramètre de stratégie, la protection contre l’hameçonnage améliorée dans Microsoft Defender SmartScreen n’avertira pas les utilisateurs s’ils stockent leur mot de passe dans les applications de l’éditeur de texte.
       </string>
 
-      <string id="CaptureThreatWindow">Capturer la fenêtre menace</string>
-      <string id="CaptureThreatWindow_Help">
-Ce paramètre de stratégie détermine si la protection contre l’hameçonnage améliorée dans Microsoft Defender SmartScreen peut capturer la fenêtre suspecte sur les machines clientes pour une analyse plus approfondie des menaces.
+      <string id="AutomaticDataCollection">Automatic Data Collection</string>
+      <string id="AutomaticDataCollection_Help">
+This policy setting determines whether Enhanced Phishing Protection can collect additional information-such as content displayed, sounds played, and application memory-when your users enter their work or school password into a suspicious website or app. This information is used only for security purposes and helps SmartScreen determine whether the website or app is malicious.
+
+If you enable this policy setting, Enhanced Phishing Protection may automatically collect additional content for security analysis from a suspicious website or app when your users enter their work or school password into that website or app.
+
+If you disable this policy setting, Enhanced Phishing Protection will not collect additional content for security analysis when your users enter their work or school password into a suspicious site or app.
+
+If this policy is not set, Enhanced Phishing Protection automatic data collection will honor the end user’s settings.
       </string>
     </stringTable>
   </resources>

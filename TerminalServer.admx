@@ -535,6 +535,11 @@
               <decimal value="4" />
             </value>
           </item>
+          <item displayName="$(string.TS_LICENSING_MODE_AAD_PER_USER)">
+            <value>
+              <decimal value="6" />
+            </value>
+          </item>
         </enum>
       </elements>
     </policy>

@@ -431,9 +431,12 @@ If you disable or do not configure this policy setting, these notifications will
         If you enable this policy setting, the Remote Desktop licensing mode that you specify is honored by the Remote Desktop license server and RD Session Host.
 
         If you disable or do not configure this policy setting, the licensing mode is not specified at the Group Policy level.
+
+        Note: AAD Per User mode is deprecated on Windows 11 and above.
       </string>
       <string id="TS_LICENSING_MODE_PER_DEVICE">Per Device</string>
       <string id="TS_LICENSING_MODE_PER_USER">Per User</string>
+      <string id="TS_LICENSING_MODE_AAD_PER_USER">AAD Per User</string>
       <string id="TS_LPTPORTMAP_EXPLAIN">This policy setting specifies whether to prevent the redirection of data to client LPT ports during a Remote Desktop Services session.
 
 You can use this setting to prevent users from mapping local LPT ports and redirecting data from the remote computer to local LPT port peripherals. By default, Remote Desktop Services allows LPT port redirection.

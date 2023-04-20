@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2023 Microsoft Corporation  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
-  <displayName>ReFS group policy</displayName>
-  <description>Group policy settings for ReFS</description>
+  <displayName>Stratégie de groupe ReFS</displayName>
+  <description>Paramètres de stratégie de groupe pour ReFS</description>
   <resources>
     <stringTable>
-      <string id="FilterManager">Filter Manager</string>
-      <string id="DevDriveAttachPolicy">Dev drive filter attach policy</string>
-      <string id="DevDriveAttachPolicyText">Dev drive is a drive optimized for performance considering developer scenarios and by default no file system filters are attached to it. Filters listed in this setting will be allowed to attach even on a dev drive.
+      <string id="FilterManager">Gestionnaire de filtre</string>
+      <string id="DevDriveAttachPolicy">Stratégie d'attachement du filtre de l'unité de disque</string>
+      <string id="DevDriveAttachPolicyText">Le lecteur Dev est un lecteur optimisé pour les performances dans le cadre de scénarios de développement et, par défaut, aucun filtre de système de fichiers n'y est attaché. Les filtres répertoriés dans ce paramètre seront autorisés à s'attacher même sur un disque de développement..
 
-A reboot is required for this setting to take effect.</string>
+Un redémarrage est nécessaire pour que ce paramètre prenne effet.</string>
     </stringTable>
 
     <presentationTable>
       <presentation id="DevDriveAttachPolicy">
-        <multiTextBox refId="DevDriveAttachPolicy">Filter list</multiTextBox>
+        <multiTextBox refId="DevDriveAttachPolicy">Filtrer la liste</multiTextBox>
       </presentation>
     </presentationTable>
   </resources>

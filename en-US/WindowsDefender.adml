@@ -220,6 +220,13 @@
 
     If you disable this setting, script scanning will be disabled.</string>
 
+    <string id="RealtimeProtection_OobeEnableRtpAndSigUpdate">Configure real-time protection and Security Intelligence Updates during OOBE</string>
+    <string id="RealtimeProtection_OobeEnableRtpAndSigUpdate_Explain">This policy setting allows you to configure whether real-time protection and Security Intelligence Updates are enabled during OOBE (Out of Box experience).
+ 
+    If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE.
+ 
+    If you either disable or do not configure this policy setting, real-time protection and Security Intelligence Updates during OOBE is not enabled.</string>
+
     <string id="RealtimeProtection_DisableBehaviorMonitoring">Turn on behavior monitoring</string>
     <string id="RealtimeProtection_DisableBehaviorMonitoring_Explain">This policy setting allows you to configure behavior monitoring.
 

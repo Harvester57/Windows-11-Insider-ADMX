@@ -432,20 +432,23 @@ Si vous activez ce paramètre de stratégie, ces notifications ne s’affichent 
 Si vous désactivez ce paramètre de stratégie ou ne le configurez pas, ces notifications s’affichent sur le serveur Hôte de la session Bureau à distance une fois que vous avez ouvert une session en tant qu’administrateur local.</string>
       <string id="TS_LICENSING_MODE">Définir le mode de concession de licences des services Bureau à distance</string>
       <string id="TS_LICENSING_MODE_EXPLAIN">
-        Ce paramètre de stratégie permet de spécifier le type de licence d’accès client aux services Bureau à distance nécessaire à la connexion à ce serveur Hôte de session Bureau à distance.
+        Ce paramètre de stratégie vous permet de spécifier le type de licence d’accès client Services Bureau à distance (CAL RDS) requise pour se connecter à ce serveur hôte de session Bureau à distance. 
 
-        Vous pouvez utiliser ce paramètre de stratégie pour sélectionner un des deux modes de licence : Par utilisateur ou Par appareil.
+        Vous pouvez utiliser ce paramètre de stratégie pour sélectionner l’un des deux modes de licence : par utilisateur ou par appareil.
 
-        Le mode de licence Par utilisateur exige que chaque compte d’utilisateur qui se connecte à ce serveur Hôte de session Bureau à distance dispose d’une licence d’accès client aux services Bureau à distance par utilisateur émise par un serveur de licences des services Bureau à distance.
+        le mode de licence par utilisateur requiert que chaque compte d’utilisateur qui se connecte à ce serveur hôte de session Bureau à distance dispose d’une licence d’accès client par utilisateur des services Bureau à distance émise à partir d’un serveur de licences des services Bureau à distance.
 
-        Le mode de licence Par appareil exige que chaque appareil qui se connecte à ce serveur Hôte de session Bureau à distance dispose d’une licence d’accès client aux services Bureau à distance par appareil émise par un serveur de licences des services Bureau à distance.
+            le mode de licence par appareil requiert que chaque appareil se connecte à celui-ci Le serveur hôte de session Bureau à distance dispose d’une licence d’accès client aux services Bureau à distance par appareil émise à partir d’un serveur de licences des services Bureau à distance. 
 
-        Si vous activez ce paramètre de stratégie, le mode de licence des services Bureau à distance que vous spécifiez est honoré par le serveur de licences des services Bureau à distance et l'Hôte de session Bureau à distance.
+        Si vous activez ce paramètre de stratégie, le mode de licence Bureau à distance que vous spécifiez est respecté par le serveur de licences Bureau à distance et l’hôte de session Bureau à distance.
 
-        Si vous désactivez ou ne configurez pas ce paramètre de stratégie, le mode de licence n’est pas spécifié au niveau de la stratégie de groupe.
+         Si vous désactivez ou ne configurez pas ce paramètre de stratégie, le mode de licence n’est pas spécifié au niveau stratégie de groupe.
+
+      Remarque :  Le mode AAD par utilisateur est déconseillé sur Windows 11 et versions ultérieures.
       </string>
       <string id="TS_LICENSING_MODE_PER_DEVICE">Par périphérique</string>
       <string id="TS_LICENSING_MODE_PER_USER">Par utilisateur</string>
+      <string id="TS_LICENSING_MODE_AAD_PER_USER">AAD par utilisateur</string>
       <string id="TS_LPTPORTMAP_EXPLAIN">Ce paramètre de stratégie indique s’il faut ou non empêcher la redirection de données vers les ports LPT client lors d’une session de services Bureau à distance.
 
 Vous pouvez utiliser ce paramètre pour empêcher les utilisateurs de mapper les ports LPT locaux et de rediriger les données à partir de l’ordinateur distant vers les périphériques de port LPT locaux. Par défaut, les services Bureau à distance autorisent la redirection du port LPT.

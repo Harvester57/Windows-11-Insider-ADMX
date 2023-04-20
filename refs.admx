@@ -13,20 +13,30 @@
     </category>
   </categories>
   <policies>
-    <policy name="DisableDevDrive" class="Machine"
-    displayName="$(string.DisableDevDrive)"
-    explainText="$(string.DisableDevDriveText)"
-    presentation="$(presentation.DevDriveOptions)"
+    <policy name="EnableDevDrive" class="Machine"
+    displayName="$(string.EnableDevDrive)"
+    explainText="$(string.EnableDevDriveText)"
+    presentation="$(presentation.EnableDevDriveOptions)"
     key="System\CurrentControlSet\Policies"
-    valueName="FsDisableDevDrive">
-        <parentCategory ref="filesys:Filesystem" />
-        <supportedOn ref="windows:SUPPORTED_Windows_11_0_22H2" />
-        <enabledValue>
+    valueName="FsEnableDevDrive">
+      <parentCategory ref="filesys:Filesystem" />
+      <supportedOn ref="windows:SUPPORTED_Windows_11_0_22H2" />
+      <enabledValue>
+          <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+          <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="DevDriveAllowAntivirusFilter" valueName="FltmgrDevDriveAllowAntivirusFilter">
+          <trueValue>
             <decimal value="1" />
-        </enabledValue>
-        <disabledValue>
+          </trueValue>
+          <falseValue>
             <decimal value="0" />
-        </disabledValue>
+          </falseValue>
+        </boolean>
+      </elements>
     </policy>
   </policies>
 </policyDefinitions>

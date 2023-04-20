@@ -436,6 +436,16 @@
             <decimal value="1" />
           </disabledValue>
         </policy>
+        <policy name="RealtimeProtection_OobeEnableRtpAndSigUpdate" class="Machine" displayName="$(string.RealtimeProtection_OobeEnableRtpAndSigUpdate)" explainText="$(string.RealtimeProtection_OobeEnableRtpAndSigUpdate_Explain)" key="Software\Policies\Microsoft\Windows Defender\Real-Time Protection" valueName="OobeEnableRtpAndSigUpdate">
+          <parentCategory ref="RealtimeProtection" />
+          <supportedOn ref="windows:SUPPORTED_Windows8" />
+          <enabledValue>
+            <decimal value="1" />
+          </enabledValue>
+          <disabledValue>
+            <decimal value="0" />
+          </disabledValue>
+        </policy>
         <policy name="RealtimeProtection_DisableBehaviorMonitoring" class="Machine" displayName="$(string.RealtimeProtection_DisableBehaviorMonitoring)" explainText="$(string.RealtimeProtection_DisableBehaviorMonitoring_Explain)" key="Software\Policies\Microsoft\Windows Defender\Real-Time Protection" valueName="DisableBehaviorMonitoring">
             <parentCategory ref="RealtimeProtection" />
             <supportedOn ref="windows:SUPPORTED_Windows8" />

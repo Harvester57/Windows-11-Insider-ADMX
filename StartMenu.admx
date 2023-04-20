@@ -557,7 +557,7 @@
       <parentCategory ref="windows:StartMenu" />
       <supportedOn ref="windows:SUPPORTED_Windows_11_0_SE" />
     </policy>
-    <policy name="HideRecoPersonalizedSites" class="Both" displayName="$(string.HideRecoPersonalizedSites)" explainText="$(string.HideRecoPersonalizedSites_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="HideRecoPersonalizedSites">
+    <policy name="HideRecommendedPersonalizedSites" class="Both" displayName="$(string.HideRecommendedPersonalizedSites)" explainText="$(string.HideRecommendedPersonalizedSites)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="HideRecommendedPersonalizedSites">
       <parentCategory ref="windows:StartMenu" />
       <supportedOn ref="windows:SUPPORTED_Windows_11_0_SE" />
     </policy>

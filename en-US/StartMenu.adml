@@ -628,10 +628,10 @@ If you enable this policy, the Start Menu will no longer display the "Recently a
 
 If you enable this policy setting, the Start Menu will no longer show the section containing a list of recommended files and apps.</string>
 
-      <string id="HideRecoPersonalizedSites">Remove Personalized Website Recommendations from the Recommended section in the Start Menu</string>
-      <string id="HideRecoPersonalizedSites_Help">This policy setting allows you to hide the personalized websites in the recommended section of the Start Menu. 
+      <string id="HideRecommendedPersonalizedSites">Remove Personalized Website Recommendations from the Recommended section in the Start Menu</string>
+      <string id="HideRecommendedPersonalizedSites_Help">This policy setting allows you to hide the personalized websites in the recommended section of the Start Menu. 
       
-If you enable this policy setting, the Start Menu will no longer show personalized website recommendations in the recommended section of the start menu.</string>
+If you enable this policy setting, the Start Menu will no longer show personalized website recommendations in the recommended section.</string>
       <string id="DisableContextMenusInStart">Disable context menus in the Start Menu</string>
       <string id="DisableContextMenusInStart_Help">This policy allows you to prevent users from being able to open context menus in the Start Menu.
 

@@ -220,6 +220,13 @@ Si vous activez ou ne configurez pas ce paramètre, l’analyse des scripts est 
 
 Si vous désactivez ce paramètre, l’analyse des scripts est désactivée.</string>
 
+    <string id="RealtimeProtection_OobeEnableRtpAndSigUpdate">Configure real-time protection and Security Intelligence Updates during OOBE</string>
+    <string id="RealtimeProtection_OobeEnableRtpAndSigUpdate_Explain">This policy setting allows you to configure whether real-time protection and Security Intelligence Updates are enabled during OOBE (Out of Box experience).
+ 
+    If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE.
+ 
+    If you either disable or do not configure this policy setting, real-time protection and Security Intelligence Updates during OOBE is not enabled.</string>
+
     <string id="RealtimeProtection_DisableBehaviorMonitoring">Activer l’analyse du comportement</string>
     <string id="RealtimeProtection_DisableBehaviorMonitoring_Explain">Ce paramètre de stratégie vous permet de configurer l’analyse du comportement.
 
