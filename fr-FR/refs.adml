@@ -7,13 +7,13 @@
     <stringTable>
       <string id="ReFS">ReFS</string>
       <string id="EnableDevDrive">Activer un lecteur de développeur</string>
-      <string id="EnableDevDriveText">Dev drive or developer volume is a volume optimized for performance of developer scenarios. A developer volume allows an administrator to choose file system filters that are attached on the volume.
+      <string id="EnableDevDriveText">Le lecteur de développement ou le volume développeur est un volume optimisé pour les performances des scénarios de développeur. Un volume de développeur permet à un administrateur de choisir des filtres de système de fichiers attachés au volume.
 
-Disabling this setting will disallow creation of new developer volumes, existing developer volumes will mount as regular volumes.
+La désactivation de ce paramètre interdit la création de nouveaux volumes de développeurs. Les volumes de développeur existants sont montés en tant que volumes standard.
 
-If this setting is not configured the default policy is to enable developer volumes while allowing antivirus filter to attach on a deveveloper volume.  Further, if not configured, a local administrator can choose to not have antivirus filter attached to a developer volume.
+Si ce paramètre n’est pas configuré, la stratégie par défaut consiste à activer les volumes de développeur tout en autorisant l’attachement d’un filtre antivirus sur un volume deveveloper.  En outre, s’il n’est pas configuré, un administrateur local peut choisir de ne pas avoir de filtre antivirus attaché à un volume de développeur.
 
-A reboot is required for this setting to take effect.</string>
+Un redémarrage est nécessaire pour que ce paramètre prenne effet.</string>
     </stringTable>
 
     <presentationTable>
