@@ -73,30 +73,30 @@ Si vous désactivez ce paramètre ou si vous ne le configurez pas, il est ignor�
 Conseil : pour trouver les dossiers indiqués par la variable d’environnement PATH, dans le Panneau de configuration, cliquez sur Système, puis dans la boîte de dialogue Propriétés système qui s’affiche, cliquez sur l’onglet Avancé, sur le bouton Variables d’environnement et, dans la zone Variables système, sur Path.</string>
 
       <string id="AutomaticRestartSignOnDescription">Se connecter et verrouiller automatiquement le dernier utilisateur interactif après un redémarrage</string>
-      <string id="AutomaticRestartSignOnDescription_Help">This policy setting controls whether a device will automatically sign in and lock the last interactive user after the system restarts or after a shutdown and cold boot.
+      <string id="AutomaticRestartSignOnDescription_Help">Ce paramètre de stratégie contrôle si un appareil connecte et verrouille automatiquement le dernier utilisateur interactif après un redémarrage du système, un arrêt ou un démarrage à froid.
 
-This only occurs if the last interactive user didn’t sign out before the restart or shutdown.​
+Cela ne se produit que si le dernier utilisateur interactif ne s'est pas déconnecté avant le redémarrage ou l'arrêt.​
 
-If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.​
+Si l'appareil est joint à Active Directory ou à Azure Active Directory, cette stratégie s'applique uniquement aux redémarrages de Windows Update. Sinon, elle s'applique aux redémarrages de Windows Update et aux redémarrages et arrêts initiés par l'utilisateur.​
 
-If you don’t configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
+Si vous ne configurez pas ce paramètre de stratégie, il est activé par défaut. Lorsque la stratégie est activée, l'utilisateur est automatiquement connecté et la session est automatiquement verrouillée avec toutes les applications de l’écran de verrouillage configurées pour cet utilisateur après le démarrage du système.​
 
-After enabling this policy, you can configure its settings through the ConfigAutomaticRestartSignOn policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
+Après l'activation de cette stratégie, vous pouvez configurer ses paramètres via la stratégie ConfigAutomaticRestartSignOn, qui configure le mode de connexion et de verrouillage automatique du dernier utilisateur interactif après un redémarrage ou un démarrage à froid​.
 
-If you disable this policy setting, the device does not configure automatic sign in. The user’s lock screen apps are not restarted after the system restarts.</string>
+Si vous désactivez ce paramètre de stratégie, l'appareil ne configure pas la connexion automatique. Les applications de l’écran de verrouillage de l’utilisateur ne sont pas redémarrées après le redémarrage du système.</string>
 
       <string id="ConfigAutomaticRestartSignOnDescription">Configurer le mode de connexion automatique et de verrouillage du dernier utilisateur interactif après un redémarrage ou un démarrage à froid</string>
-      <string id="ConfigAutomaticRestartSignOnDescription_Help">This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose “Disabled” in the “Sign-in and lock last interactive user automatically after a restart” policy, then automatic sign on will not occur and this policy does not need to be configured.
+      <string id="ConfigAutomaticRestartSignOnDescription_Help">Ce paramètre de stratégie contrôle la configuration sous laquelle un redémarrage, une authentification et un verrouillage automatiques interviennent après un redémarrage ou un démarrage à froid. Si vous avez choisi « Désactivé » dans la stratégie « Se connecter et verrouiller automatiquement le dernier utilisateur interactif après un redémarrage », l'authentification automatique ne se produira pas et cette stratégie ne doit pas être configurée.
 
-If you enable this policy setting, you can choose one of the following two options:
+Si vous activez ce paramètre de stratégie, vous pouvez choisir l'une des deux options suivantes :
 
-1. “Enabled if BitLocker is on and not suspended” specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
-     BitLocker is suspended during updates if:
-        - The device doesn’t have TPM 2.0 and PCR7, or
-        - The device doesn’t use a TPM-only protector
-2. “Always Enabled” specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+1. « Activé si BitLocker est activé et non suspendu » spécifie que l'authentification et le verrouillage automatiques ne se produisent que si BitLocker est actif et non suspendu pendant le redémarrage ou l'arrêt. À ce stade, les données personnelles sont accessibles sur le disque dur de l'appareil si BitLocker est désactivé ou suspendu pendant une mise à jour. La fonctionnalité de suspension de BitLocker retire temporairement la protection des données pour les composants et les données système, mais elle peut s'avérer nécessaire dans certaines circonstances pour mettre à jour les composants indispensables au démarrage.
+     BitLocker est suspendu pendant les mises à jour si :
+        - L'appareil n'a pas TPM 2.0 et PCR7, ou
+        - L'appareil n'utilise pas de protecteur pour TPM uniquement.
+2. « Toujours activé » indique que l'authentification automatique se produit même si BitLocker est désactivé ou suspendu pendant le redémarrage ou l'arrêt. Quand BitLocker n'est pas activé, les données personnelles sont accessibles sur le disque dur. Le redémarrage et l'authentification automatiques ne doivent être exécutés qu'à cette condition si vous avez l'assurance que l'appareil configuré se trouve à un emplacement physique sécurisé.
 
-If you disable or don’t configure this setting, automatic sign on will default to the “Enabled if BitLocker is on and not suspended” behavior.</string>
+Si vous désactivez ou ne configurez pas ce paramètre, l'authentification automatique correspond par défaut au comportement « Activé si BitLocker est activé ou non interrompu ».</string>
 
       <string id="ConfigAutomaticRestartSignOn_EnableIfSecure">Activé si BitLocker est activé et non suspendu</string>
       <string id="ConfigAutomaticRestartSignOn_EnableAlways">Toujours activé</string>
