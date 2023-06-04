@@ -53,14 +53,14 @@ Si vous désactivez ou ne configurez pas ce paramètre de stratégie, la longueu
 
 REMARQUE : si les conditions ci-dessus pour la longueur maximale du code confidentiel ne sont pas remplies, les valeurs par défaut seront utilisées pour les longueurs maximale et minimale du code confidentiel.
         </string>
-        <string id="MSPassport_UppercaseLetters">Exiger des lettres majuscules</string>
-        <string id="MSPassport_UppercaseLettersExplain">Utilisez ce paramètre de stratégie pour configurer l'utilisation des lettres majuscules dans le code PIN.
+        <string id="MSPassport_UppercaseLetters">Exiger des lettres capitales</string>
+        <string id="MSPassport_UppercaseLettersExplain">Utilisez ce paramètre de stratégie pour configurer l'utilisation des lettres capitales dans le code PIN.
 
-Si vous activez ce paramètre de stratégie, Windows demande à l'utilisateur d'ajouter au moins une lettre en majuscule dans votre code PIN.
+Si vous activez ce paramètre de stratégie, Windows demande à l'utilisateur d'ajouter au moins une lettre en capital dans votre code PIN.
 
-Si vous désactivez ce paramètre de stratégie, Windows n'autorise pas l'utilisateur à ajouter des lettres en majuscule dans leur code PIN.
+Si vous désactivez ce paramètre de stratégie, Windows n'autorise pas l'utilisateur à ajouter des lettres en capitales dans leur code PIN.
 
-Si vous ne configurez pas ce paramètre de stratégie, Windows autorise les lettres majuscules dans le code PIN, mais n'en impose pas.
+Si vous ne configurez pas ce paramètre de stratégie, Windows autorise les lettres capitales dans le code PIN, mais n'en impose pas.
         </string>
         <string id="MSPassport_LowercaseLetters">Exiger des lettres minuscules</string>
         <string id="MSPassport_LowercaseLettersExplain">Utilisez ce paramètre de stratégie pour configurer l'utilisation des lettres en minuscule dans le code PIN.
@@ -214,7 +214,7 @@ Windows exige qu'un utilisateur verrouille et déverrouille sa session après av
             <decimalTextBox refId="MSPassport_MaximumPINLengthDataType" spin="true" spinStep="1" defaultvalue="127">Longueur maximale du code PIN</decimalTextBox>
         </presentation>
         <presentation id="MSPassport_UppercaseLettersControl">
-            <dropdownList refId="MSPassport_UppercaseLettersChoices" defaultItem="0">Lettres majuscules :</dropdownList>
+            <dropdownList refId="MSPassport_UppercaseLettersChoices" defaultItem="0">Lettres capitales :</dropdownList>
         </presentation>
         <presentation id="MSPassport_LowercaseLettersControl">
             <dropdownList refId="MSPassport_LowercaseLettersChoices" defaultItem="0">Lettres minuscules :</dropdownList>

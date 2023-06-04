@@ -572,15 +572,13 @@ Si vous ne configurez pas ce paramètre de stratégie, les cartes à puce sont a
       <string id="EnhancedPIN_Name">Autoriser les codes confidentiels améliorés au démarrage</string>
       <string id="EnhancedPIN_Help">Ce paramètre de stratégie permet de configurer si les codes confidentiels améliorés peuvent être utilisés avec BitLocker au démarrage.
 
-Les codes confidentiels de démarrage améliorés permettent l’utilisation de caractères comme les majuscules et les minuscules, les symboles, les chiffres et les espaces. Ce paramètre de stratégie est appliqué lorsque vous activez BitLocker.
+Les codes confidentiels de démarrage améliorés permettent l’utilisation de caractères comme les capitales et les minuscules, les symboles, les chiffres et les espaces. Ce paramètre de stratégie est appliqué lorsque vous activez BitLocker.
 
 Si vous activez ce paramètre de stratégie, tous les nouveaux codes confidentiels de démarrage BitLocker seront des codes améliorés.
 
 Remarque : tous les ordinateurs ne prennent pas en charge les codes confidentiels améliorés dans l’environnement préalable au démarrage. Il est fortement conseillé que les utilisateurs réalisent une vérification système pendant l’installation de BitLocker.
 
 Si vous désactivez ce paramètre de stratégie ou ne le configurez pas, les codes confidentiels améliorés ne sont pas autorisés.
-
-      
 
       </string>
 
